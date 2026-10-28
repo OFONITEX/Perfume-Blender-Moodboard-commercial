@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'ÉLIXIR AMBRÉ — 3D Perfume Moodboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient Glow Background -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="badge-tag">FINAL PROJECT — 3D MOODBOARD</div>
+      <h1 class="project-title">L'ÉLIXIR AMBRÉ</h1>
+      <p class="project-subtitle">Cinematic 3D Luxury Perfume Commercial &bull; Blender Cycles</p>
+      
+      <!-- Meta Information Card -->
+      <div class="meta-card">
+        <div class="meta-item">
+          <span class="meta-label">Student Name</span>
+          <span class="meta-value" id="student-name" contenteditable="true" title="Click to edit your name">Alex Morgan</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-label">Industry & Topic</span>
+          <span class="meta-value">Cosmetics &bull; Luxury Fragrance</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-label">Target Duration</span>
+          <span class="meta-value">10 Seconds &bull; 3 Shots (24 FPS)</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-label">Primary Tool</span>
+          <span class="meta-value">Blender 4.x (Cycles Engine)</span>
+        </div>
+      </div>
+
+      <!-- Logline / Brief -->
+      <div class="concept-box">
+        <h3>Project Brief & Creative Logline</h3>
+        <p>
+          "A high-end 10-second commercial showcasing an artisanal fluted glass perfume bottle filled with warm glowing amber fragrance. 
+          The piece emphasizes tactile micro-details—knurled brushed brass, light refractions and caustics, and volumetric golden mist—culminating in a dramatic reveal on a dark marble stage."
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-bar">
+        <button class="btn btn-primary" id="btn-print">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          Export / Save as PDF
+        </button>
+        <button class="btn btn-secondary" id="btn-copy-brief">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          Copy Project Pitch Text
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Color Palette Section -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2>Curated Color Palette</h2>
+        <p>Harmonized warm amber, deep volcanic obsidian, and reflective champagne brass tones. Click any swatch to copy hex.</p>
+      </div>
+      <div class="swatch-grid">
+        <div class="swatch-card" data-color="#0E0D11" style="--swatch-color: #0E0D11;">
+          <div class="swatch-preview"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Obsidian Slate</span>
+            <span class="swatch-hex">#0E0D11</span>
+            <span class="swatch-role">Background & Staging</span>
+          </div>
+        </div>
+        <div class="swatch-card" data-color="#D99B43" style="--swatch-color: #D99B43;">
+          <div class="swatch-preview"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Amber Elixir</span>
+            <span class="swatch-hex">#D99B43</span>
+            <span class="swatch-role">Fragrance Liquid Base</span>
+          </div>
+        </div>
+        <div class="swatch-card" data-color="#E7C584" style="--swatch-color: #E7C584;">
+          <div class="swatch-preview"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Brushed Champagne</span>
+            <span class="swatch-hex">#E7C584</span>
+            <span class="swatch-role">Metallic Cap & Foil</span>
+          </div>
+        </div>
+        <div class="swatch-card" data-color="#874B1A" style="--swatch-color: #874B1A;">
+          <div class="swatch-preview"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Deep Cognac</span>
+            <span class="swatch-hex">#874B1A</span>
+            <span class="swatch-role">Glass Absorption Gradient</span>
+          </div>
+        </div>
+        <div class="swatch-card" data-color="#FDFBF7" style="--swatch-color: #FDFBF7;">
+          <div class="swatch-preview"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Prism Highlight</span>
+            <span class="swatch-hex">#FDFBF7</span>
+            <span class="swatch-role">Specular Rim Reflections</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- References Filter Tabs -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2>Visual Reference Board</h2>
+        <p>Curated 3D references categorised for modeling, lighting, shading, motion, and staging.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All References (6)</button>
+        <button class="filter-btn" data-filter="silhouette">Bottle Form</button>
+        <button class="filter-btn" data-filter="materials">Materials & Shaders</button>
+        <button class="filter-btn" data-filter="lighting">Lighting & Caustics</button>
+        <button class="filter-btn" data-filter="environment">Podium & Stage</button>
+        <button class="filter-btn" data-filter="motion">Motion & Fluid</button>
+        <button class="filter-btn" data-filter="brand">Typography</button>
+      </div>
+
+      <!-- Moodboard Gallery Grid -->
+      <div class="gallery-grid" id="gallery-grid">
+        
+        <!-- Card 1: Bottle Silhouette -->
+        <article class="reference-card" data-category="silhouette">
+          <div class="card-image-wrap">
+            <img src="assets/perfume_bottle_hero_1793093390430.jpg" alt="Perfume Bottle Silhouette" loading="lazy">
+            <span class="card-badge">Bottle Silhouette</span>
+            <button class="zoom-btn" title="Expand image">&plus;</button>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">1. Fluted Glass Geometry & Proportions</h3>
+            <p class="card-desc">Architectural ribbed fluting running vertically down the bottle walls with a heavy weighted glass base.</p>
+            <div class="blender-notes">
+              <span class="notes-tag">Blender Workflow:</span>
+              <ul>
+                <li>Cylinder primitive with 24-32 vertical loop cuts.</li>
+                <li>Checker deselect &rarr; scale inward with Bevel (`Ctrl + B`).</li>
+                <li>Solidify modifier + Subdivision Surface (`Ctrl + 2`).</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Cap Macro -->
+        <article class="reference-card" data-category="materials">
+          <div class="card-image-wrap">
+            <img src="assets/perfume_cap_macro_1793093410384.jpg" alt="Gold Cap Macro Reference" loading="lazy">
+            <span class="card-badge">Materials & Finishes</span>
+            <button class="zoom-btn" title="Expand image">&plus;</button>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">2. Knurled Brass Atomizer & Collar</h3>
+            <p class="card-desc">Tactile machined knurling texture with micro-scratches, giving the product an authentic luxury weight.</p>
+            <div class="blender-notes">
+              <span class="notes-tag">Blender Workflow:</span>
+              <ul>
+                <li>Principled BSDF: Metallic `1.0`, Roughness `0.18–0.24`.</li>
+                <li>Add procedural knurled bump map (Diamond Voronoi or image texture).</li>
+                <li>Subtle Anisotropic shading for circular lathe reflections.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Caustics Lighting -->
+        <article class="reference-card" data-category="lighting">
+          <div class="card-image-wrap">
+            <img src="assets/perfume_glass_caustics_1793093430776.jpg" alt="Glass Caustics Lighting" loading="lazy">
+            <span class="card-badge">Lighting & Caustics</span>
+            <button class="zoom-btn" title="Expand image">&plus;</button>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">3. Radiant Amber Backlight & Dispersion</h3>
+            <p class="card-desc">Light rays projecting through the glass and fluid, forming luminous geometric web caustics across the floor.</p>
+            <div class="blender-notes">
+              <span class="notes-tag">Blender Workflow:</span>
+              <ul>
+                <li>Enable Cycles "Shadow Caustics" on bottle, liquid, and floor.</li>
+                <li>Narrow beam Spot Light positioned behind the bottle pointing forward.</li>
+                <li>Volume Scatter in World Shader (`Density: 0.005`) for light rays.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Podium Stage -->
+        <article class="reference-card" data-category="environment">
+          <div class="card-image-wrap">
+            <img src="assets/perfume_podium_stage_1793093458757.jpg" alt="Podium Stage Reference" loading="lazy">
+            <span class="card-badge">Environment & Staging</span>
+            <button class="zoom-btn" title="Expand image">&plus;</button>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">4. Minimalist Obsidian Pedestal</h3>
+            <p class="card-desc">Cylindrical dark Nero Marquina marble podium with brass inlay ring. Subtle ground reflections and ambient smoke.</p>
+            <div class="blender-notes">
+              <span class="notes-tag">Blender Workflow:</span>
+              <ul>
+                <li>Beveled cylinder with inset loop cuts for brass metal bands.</li>
+                <li>PBR Marble texture (Color, Roughness, Normal) from Poly Haven.</li>
+                <li>Overhead softbox light casting a focused circular pool of light.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Mist Motion -->
+        <article class="reference-card" data-category="motion">
+          <div class="card-image-wrap">
+            <img src="assets/perfume_mist_motion_1793093477467.jpg" alt="Perfume Mist Fluid Motion" loading="lazy">
+            <span class="card-badge">Motion & FX</span>
+            <button class="zoom-btn" title="Expand image">&plus;</button>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">5. High-Speed Golden Mist Burst</h3>
+            <p class="card-desc">Volumetric spray mist with backlit microscopic droplets expanding dynamically into the dark air.</p>
+            <div class="blender-notes">
+              <span class="notes-tag">Blender Workflow:</span>
+              <ul>
+                <li>Option A: Geometry Nodes particle emitter with cone dispersion.</li>
+                <li>Option B: Quick Liquid / Gas simulation (Mantaflow Smoke with high vorticity).</li>
+                <li>Motion Blur enabled (`Shutter: 0.5`) in Cycles render settings.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: Typography & Brand -->
+        <article class="reference-card" data-category="brand">
+          <div class="card-image-wrap">
+            <img src="assets/perfume_brand_typography_1793093508300.jpg" alt="Brand Identity Typography" loading="lazy">
+            <span class="card-badge">Typography & Branding</span>
+            <button class="zoom-btn" title="Expand image">&plus;</button>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">6. Gold Foil Serif Branding & Label</h3>
+            <p class="card-desc">Refined high-fashion serif lettering with metallic debossing on textured matte charcoal paper.</p>
+            <div class="blender-notes">
+              <span class="notes-tag">Blender Workflow:</span>
+              <ul>
+                <li>Design transparent label PNG with Alpha in Figma or Photoshop.</li>
+                <li>Mix Shader: Mix Glass BSDF with Gold Foil Metallic using Alpha as factor.</li>
+                <li>Add inverted Bump node into normal input for realistic debossed depth.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Storyboard Breakdown -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2>10-Second Commercial Storyboard</h2>
+        <p>Three planned shots structured to maximize visual impact within achievable 3D scope.</p>
+      </div>
+
+      <div class="storyboard-grid">
+        <div class="storyboard-card">
+          <div class="shot-pill">Shot 1 &bull; 0:00 – 0:03</div>
+          <h4>The Macro Mystery</h4>
+          <p class="shot-detail"><strong>Camera:</strong> 85mm Macro, shallow depth of field (f/2.4).</p>
+          <p class="shot-detail"><strong>Action:</strong> Slow diagonal pan across the knurled gold atomizer as a rim light sweeps across the metallic ridge.</p>
+          <p class="shot-detail"><strong>Mood:</strong> Intimate, precise, tactile craftsmanship.</p>
+        </div>
+        <div class="storyboard-card">
+          <div class="shot-pill">Shot 2 &bull; 0:03 – 0:07</div>
+          <h4>The Light & Mist Dance</h4>
+          <p class="shot-detail"><strong>Camera:</strong> 50mm Medium angle, tracking upward.</p>
+          <p class="shot-detail"><strong>Action:</strong> The nozzle presses down, releasing a cloud of golden backlit mist. Caustics flare brightly through the amber liquid.</p>
+          <p class="shot-detail"><strong>Mood:</strong> Ethereal, kinetic, luxurious.</p>
+        </div>
+        <div class="storyboard-card">
+          <div class="shot-pill">Shot 3 &bull; 0:07 – 0:10</div>
+          <h4>The Hero Reveal</h4>
+          <p class="shot-detail"><strong>Camera:</strong> 35mm Low-angle cinematic dolly-out.</p>
+          <p class="shot-detail"><strong>Action:</strong> The complete bottle stands crowned on the dark marble pedestal. Golden title "L'ÉLIXIR AMBRÉ" elegantly fades in.</p>
+          <p class="shot-detail"><strong>Mood:</strong> Majestic, iconic, timeless.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checklist for Final Class -->
+    <section class="section checklist-section">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2>Final Class Preparation Checklist</h2>
+        <p>Everything required for our project-development review is ready.</p>
+      </div>
+
+      <div class="checklist-grid">
+        <label class="check-item checked">
+          <input type="checkbox" checked disabled>
+          <span class="check-custom"></span>
+          <span class="check-text">Chosen an industry/topic: <strong>Cosmetics & Luxury Fragrance</strong></span>
+        </label>
+        <label class="check-item checked">
+          <input type="checkbox" checked disabled>
+          <span class="check-custom"></span>
+          <span class="check-text">Decided on general project idea: <strong>10s 3D Perfume Commercial in Blender</strong></span>
+        </label>
+        <label class="check-item checked">
+          <input type="checkbox" checked disabled>
+          <span class="check-custom"></span>
+          <span class="check-text">Found 8–15 high-end 3D references covering all aspects</span>
+        </label>
+        <label class="check-item checked">
+          <input type="checkbox" checked disabled>
+          <span class="check-custom"></span>
+          <span class="check-text">Included references for style, color, lighting, modeling & animation</span>
+        </label>
+        <label class="check-item checked">
+          <input type="checkbox" checked disabled>
+          <span class="check-custom"></span>
+          <span class="check-text">Put references into an organized moodboard presentation</span>
+        </label>
+        <label class="check-item checked">
+          <input type="checkbox" checked disabled>
+          <span class="check-custom"></span>
+          <span class="check-text">Added student name + project pitch & logline</span>
+        </label>
+      </div>
+    </section>
+  </main>
+
+  <!-- Image Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close">&times;</button>
+      <img src="" alt="Expanded View" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>Prepared for Final 3D / Motion Graphics Project Review &bull; Built with Blender &amp; Antigravity</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
